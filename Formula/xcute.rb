@@ -5,21 +5,21 @@
 class Xcute < Formula
   desc "A CLI tool that executes commands with placeholders replaced by input from stdin"
   homepage "https://github.com/dayflower/xcute"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dayflower/xcute/releases/download/v0.2.0/xcute_Darwin_x86_64.tar.gz"
-      sha256 "49599de9338890957b0fe37a4916dddc7a238d52a4b390820b946e85eef55b27"
+      url "https://github.com/dayflower/xcute/releases/download/v0.3.0/xcute_Darwin_x86_64.tar.gz"
+      sha256 "8444d683ef3fa9eede67532ec8844e67cd79fe8f936c45a5f6e8d841a074f857"
 
       def install
         bin.install "xcute"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dayflower/xcute/releases/download/v0.2.0/xcute_Darwin_arm64.tar.gz"
-      sha256 "d08166018ff23fb6c8b22c9b3cd67eb28313e9949f11a046c3efa69e22f372d3"
+      url "https://github.com/dayflower/xcute/releases/download/v0.3.0/xcute_Darwin_arm64.tar.gz"
+      sha256 "215d232989738c54973024873adf4addc99643704e9e1ad0e25d5b999c35b535"
 
       def install
         bin.install "xcute"
@@ -29,15 +29,15 @@ class Xcute < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dayflower/xcute/releases/download/v0.2.0/xcute_Linux_x86_64.tar.gz"
-      sha256 "2bf6fb6604839d94d1c433232e209eacfe9cc0e91c5ec25010837d41845d54db"
+      url "https://github.com/dayflower/xcute/releases/download/v0.3.0/xcute_Linux_x86_64.tar.gz"
+      sha256 "fcdcfb4f324799113679c6e6c7c996b55070f303be0743bd3ec215668c81a07a"
       def install
         bin.install "xcute"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dayflower/xcute/releases/download/v0.2.0/xcute_Linux_arm64.tar.gz"
-      sha256 "af85b93aae078cf72564257fb69d4bbf8ab45f52f0d703a778d12a2644b4f9c4"
+      url "https://github.com/dayflower/xcute/releases/download/v0.3.0/xcute_Linux_arm64.tar.gz"
+      sha256 "9df84d6945760d6ec78c093e6f6362ffff86984566307cbc5dc9c6d139bc5b6c"
       def install
         bin.install "xcute"
       end
