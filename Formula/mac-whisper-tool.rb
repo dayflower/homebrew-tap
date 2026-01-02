@@ -5,21 +5,21 @@
 class MacWhisperTool < Formula
   desc "CLI tool to export meeting transcriptions from MacWhisper's database"
   homepage "https://github.com/dayflower/mac-whisper-tool"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/dayflower/mac-whisper-tool/releases/download/v0.2.0/mac-whisper-tool_0.2.0_darwin_x86_64.tar.gz"
-    sha256 "3548265acb3cb4c20e1ae326580db3d6f5791825630862a696ae5a5b8ea3b9b2"
+    url "https://github.com/dayflower/mac-whisper-tool/releases/download/v0.3.0/mac-whisper-tool_0.3.0_darwin_x86_64.tar.gz"
+    sha256 "2366e8045a8da6069e9c1c26a23b33a93c4a933aaefb6610ea8bab4d84722654"
 
     def install
       bin.install "mac-whisper-tool"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/dayflower/mac-whisper-tool/releases/download/v0.2.0/mac-whisper-tool_0.2.0_darwin_arm64.tar.gz"
-    sha256 "94efef9f1166d740a511683f1b6730f64ab22d37ea13702ab48ab805938ff208"
+    url "https://github.com/dayflower/mac-whisper-tool/releases/download/v0.3.0/mac-whisper-tool_0.3.0_darwin_arm64.tar.gz"
+    sha256 "54e31dd70ae395ec74241e59a781bea656ab344e017c8fbf5aef379330111e53"
 
     def install
       bin.install "mac-whisper-tool"
