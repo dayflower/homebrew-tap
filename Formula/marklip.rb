@@ -1,4 +1,4 @@
-class Dispsel < Formula
+class Marklip < Formula
   desc "A lightning-fast clipboard utility for seamless Markdown ⇄ HTML conversion."
   homepage "https://github.com/dayflower/marklip"
   version "0.1.1"
