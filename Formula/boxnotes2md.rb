@@ -5,21 +5,21 @@
 class Boxnotes2md < Formula
   desc "Convert Box Notes JSON files into GitHub Flavored Markdown."
   homepage "https://github.com/dayflower/boxnotes2md"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dayflower/boxnotes2md/releases/download/v0.1.2/boxnotes2md_Darwin_x86_64.tar.gz"
-      sha256 "0542af3f0ac96c418d627fd3adab85ee7762fc4eb91bfa5b1c39fb94f8252d60"
+      url "https://github.com/dayflower/boxnotes2md/releases/download/v0.1.3/boxnotes2md_Darwin_x86_64.tar.gz"
+      sha256 "a8258891f7ba0f4c6284ec82d64c93d226f5d35dbadb51251c1c202180ea0718"
 
       def install
         bin.install "boxnotes2md"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dayflower/boxnotes2md/releases/download/v0.1.2/boxnotes2md_Darwin_arm64.tar.gz"
-      sha256 "a13b27fc791f0eda82d21f05661d17cc6f8ea2341cf5a8710a258a6c8ec24b7e"
+      url "https://github.com/dayflower/boxnotes2md/releases/download/v0.1.3/boxnotes2md_Darwin_arm64.tar.gz"
+      sha256 "60162b4ca63cc845cf7b3f963946ac0d3079b18b8d6bf08eb3f177b9902865d9"
 
       def install
         bin.install "boxnotes2md"
@@ -29,15 +29,15 @@ class Boxnotes2md < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dayflower/boxnotes2md/releases/download/v0.1.2/boxnotes2md_Linux_x86_64.tar.gz"
-      sha256 "d36cf9c0e2510957f8bdba85fd90d7d1d1eda29fe8a280fcb6bcb04271d6cb6b"
+      url "https://github.com/dayflower/boxnotes2md/releases/download/v0.1.3/boxnotes2md_Linux_x86_64.tar.gz"
+      sha256 "053b2133dd18335670dccd96668bfc6a818fbc03bb424863d02248d2b3443386"
       def install
         bin.install "boxnotes2md"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dayflower/boxnotes2md/releases/download/v0.1.2/boxnotes2md_Linux_arm64.tar.gz"
-      sha256 "b9402f4476940384a7bef4eaafccba3f01881074e0ce00c12129e6218dbf77e1"
+      url "https://github.com/dayflower/boxnotes2md/releases/download/v0.1.3/boxnotes2md_Linux_arm64.tar.gz"
+      sha256 "e88e465d2de0e14c5343920d4e551851183ace705e14b362f19c5671a9c86527"
       def install
         bin.install "boxnotes2md"
       end
