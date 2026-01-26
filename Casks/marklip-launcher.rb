@@ -1,6 +1,6 @@
 cask "marklip-launcher" do
-  version "0.1.0"
-  sha256 "5d766c538d92bd6af90ed2f9be56d4e2167d3c2739a3bf60f79bb0d8f97ee1af"
+  version "0.1.2"
+  sha256 "d9f8e020580bbbf181378c56effde4599cdb1c687633f45b4042196b252f8387"
 
   url "https://github.com/dayflower/marklip-launcher/releases/download/v#{version}/Marklip-Launcher-#{version}.zip"
   name "marklip-launcher"
