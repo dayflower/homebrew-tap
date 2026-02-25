@@ -1,6 +1,6 @@
 cask "signboard" do
-  version "0.1.2"
-  sha256 "cee3df833925db534ff08ac6d70990063fc664ed6a89b14b192c1ffb5016ced9"
+  version "0.2.0"
+  sha256 "c620ba7fb8bb23012e22fbd10f13e57a3865b35d5ff26a8f8c7f9adf200a79c7"
 
   url "https://github.com/dayflower/Signboard/releases/download/v#{version}/SignboardApp-#{version}.zip"
   name "Signboard"
