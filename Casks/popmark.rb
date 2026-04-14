@@ -1,8 +1,8 @@
 cask "popmark" do
-  version "0.1.4"
-  sha256 "d7ab9407448943c74a0d3e248e5ab3aeb3fd7f5c7e6be3040f619036368981b1"
+  version "0.2.0"
+  sha256 "9abe3b97c3338f8efd048d218cfb4e2a629592d0894cdd0729456062bb060ed4"
 
-  url "https://github.com/dayflower/popmark/releases/download/v0.1.4/popmark-0.1.4-macos.zip"
+  url "https://github.com/dayflower/popmark/releases/download/v0.2.0/popmark-0.2.0-macos.zip"
   name "Popmark"
   desc "Markdown scratch-pad with global hotkey"
   homepage "https://github.com/dayflower/popmark"
