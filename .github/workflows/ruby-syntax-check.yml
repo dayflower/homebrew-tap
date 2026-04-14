@@ -1,0 +1,49 @@
+name: Ruby Syntax Check
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+    paths:
+      - "Casks/**/*.rb"
+      - "Formula/**/*.rb"
+
+permissions:
+  contents: read
+
+jobs:
+  ruby-syntax-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Run ruby -c for changed files
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+
+          mapfile -t files < <(
+            git diff --name-only "$BASE_SHA" "$HEAD_SHA" -- \
+              ':(glob)Casks/**/*.rb' \
+              ':(glob)Formula/**/*.rb'
+          )
+
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No changed Ruby files under Casks/ or Formula/. Skipping."
+            exit 0
+          fi
+
+          echo "Checking Ruby syntax for changed files:"
+          printf ' - %s\n' "${files[@]}"
+
+          for file in "${files[@]}"; do
+            ruby -c "$file"
+          done
