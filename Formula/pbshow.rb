@@ -1,9 +1,9 @@
 class Pbshow < Formula
   desc "macOS clipboard inspector CLI"
   homepage "https://github.com/dayflower/pbshow"
-  version "0.2.0"
-  url "https://github.com/dayflower/pbshow/releases/download/v0.2.0/pbshow-0.2.0-macos.zip"
-  sha256 "b6084fee2526d9d961cee2112fe3ea747a49ff2a36845a1b27714315674a71aa"
+  version "0.2.1"
+  url "https://github.com/dayflower/pbshow/releases/download/v0.2.1/pbshow-0.2.1-macos.zip"
+  sha256 "d66b88d79fb01296f8b36fe4fbd5cbaa0315e9b915ff5de07b4b13aeed73cf34"
 
   def install
     bin.install "pbshow"
