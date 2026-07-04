@@ -1,8 +1,8 @@
 cask "lidlock" do
-  version "0.1.3"
-  sha256 "b1cff924f1d331c37c58dd9529e1d4bfe9f81d15346a94f59c4fa38753513df4"
+  version "0.1.4"
+  sha256 "da348f010fa8795fbebb8299157d3bceba62045ae759a06a927cbb3a6df522e1"
 
-  url "https://github.com/dayflower/lidlock/releases/download/v0.1.3/LidLock-0.1.3.zip",
+  url "https://github.com/dayflower/lidlock/releases/download/v0.1.4/LidLock-0.1.4.zip",
       verified: "github.com/dayflower/lidlock/"
   name "LidLock"
   desc "Menu-bar app that locks or sleeps a Mac in clamshell mode"
