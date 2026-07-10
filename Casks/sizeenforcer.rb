@@ -1,8 +1,8 @@
 cask "sizeenforcer" do
-  version "0.1.0"
-  sha256 "afd9db2e4ed89e29360c6ff01ade10f75e7e7154dd58e5111eea4979f27f1a48"
+  version "0.2.0"
+  sha256 "ca58110447c450a91992e6f6e842f0c744f7ef1a2e02d5f2c3b0118392b19e29"
 
-  url "https://github.com/dayflower/SizeEnforcer/releases/download/v0.1.0/SizeEnforcer-0.1.0.zip",
+  url "https://github.com/dayflower/SizeEnforcer/releases/download/v0.2.0/SizeEnforcer-0.2.0.zip",
       verified: "github.com/dayflower/SizeEnforcer/"
   name "SizeEnforcer"
   desc "Menu-bar app that resizes other apps' windows to preset sizes"
