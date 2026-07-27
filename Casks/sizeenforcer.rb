@@ -1,8 +1,8 @@
 cask "sizeenforcer" do
-  version "0.2.0"
-  sha256 "ca58110447c450a91992e6f6e842f0c744f7ef1a2e02d5f2c3b0118392b19e29"
+  version "0.3.0"
+  sha256 "dc429de6b3f2ebff0e49c06d3823cb309de8c1a18cc5f528597b658e310049e3"
 
-  url "https://github.com/dayflower/SizeEnforcer/releases/download/v0.2.0/SizeEnforcer-0.2.0.zip",
+  url "https://github.com/dayflower/SizeEnforcer/releases/download/v0.3.0/SizeEnforcer-0.3.0.zip",
       verified: "github.com/dayflower/SizeEnforcer/"
   name "SizeEnforcer"
   desc "Menu-bar app that resizes other apps' windows to preset sizes"
@@ -11,10 +11,4 @@ cask "sizeenforcer" do
   depends_on macos: :sequoia
 
   app "SizeEnforcer.app"
-
-  caveats <<~EOS
-    This application is signed with an ad-hoc signature.
-    You need to run 'xattr -dr com.apple.quarantine /Applications/SizeEnforcer.app'
-    after installation to open it.
-  EOS
 end
