@@ -1,8 +1,9 @@
 cask "signboard" do
-  version "0.3.1"
-  sha256 "a1095854528f040870bbaa65c8d9986b11712adba4e836ea992b172dd6c3caba"
+  version "0.4.0"
+  sha256 "101c6b68b680a1cddc1b40245f6fe36d26218719b49c5f0c8279a4d96003df76"
 
-  url "https://github.com/dayflower/Signboard/releases/download/v#{version}/SignboardApp-#{version}.zip"
+  url "https://github.com/dayflower/Signboard/releases/download/v0.4.0/SignboardApp-0.4.0.zip",
+      verified: "github.com/dayflower/Signboard/"
   name "Signboard"
   desc "Floating desktop text panels with menu bar control and CLI automation"
   homepage "https://github.com/dayflower/Signboard"
@@ -12,14 +13,8 @@ cask "signboard" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "SignboardApp.app"
   binary "SignboardApp.app/Contents/MacOS/signboard"
-
-  caveats <<~EOS
-    This application is signed with ad-hoc signature.
-    You need to run 'xattr -dr com.apple.quarantine SignboardApp.app'
-    after installation to open it."
-  EOS
 end
