@@ -1,19 +1,13 @@
 cask "popmark" do
-  version "1.3.3"
-  sha256 "a3d680b01e1504265baba5a1079d12d0732fe086d2842a248eea3c633d5c4a61"
+  version "1.4.0"
+  sha256 "82e70e580689ff473306e5f290aa596fad8c2976b55015a948fd1fa6c385c9a9"
 
-  url "https://github.com/dayflower/popmark/releases/download/v1.3.3/popmark-1.3.3-macos.zip"
+  url "https://github.com/dayflower/popmark/releases/download/v1.4.0/popmark-1.4.0-macos.zip"
   name "Popmark"
   desc "Markdown scratch-pad with global hotkey"
   homepage "https://github.com/dayflower/popmark"
 
   app "Popmark.app"
-
-  caveats <<~EOS
-    This application is signed with ad-hoc signature.
-    You need to run 'xattr -dr com.apple.quarantine Popmark.app'
-    after installation to open it."
-  EOS
 
   zap trash: [
     "~/Library/Application Support/com.eula.dayflower.popmark",
