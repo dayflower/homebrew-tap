@@ -1,8 +1,8 @@
 cask "wakeroad" do
-  version "0.2.1"
-  sha256 "82bce150f57b4ea7e1003bdbde1b00ecbb4438e04079fd835d6a95443b8ca625"
+  version "0.3.0"
+  sha256 "14978abe4f14ace8207568cc1a3c5b19ccd81aab4b5f234854bf362624613479"
 
-  url "https://github.com/dayflower/wakeroad/releases/download/v0.2.1/WakeRoad-0.2.1.zip",
+  url "https://github.com/dayflower/wakeroad/releases/download/v0.3.0/WakeRoad-0.3.0.zip",
       verified: "github.com/dayflower/wakeroad/"
   name "WakeRoad"
   desc "Menu bar app that keeps a Mac awake while AI coding agents are working"
