@@ -1,8 +1,8 @@
 cask "live-transcriber" do
-  version "0.2.0"
-  sha256 "6bf1ba951fff32e332a3946dd692cb462984862aab7b2b24d911cdb33af73a7d"
+  version "0.2.1"
+  sha256 "faf9092e617c3ac9044ccdbe722a8c9eef36aa18cf0c6e72662da313b72b6861"
 
-  url "https://github.com/dayflower/LiveTranscriber/releases/download/v0.2.0/LiveTranscriber-0.2.0.zip",
+  url "https://github.com/dayflower/LiveTranscriber/releases/download/v0.2.1/LiveTranscriber-0.2.1.zip",
       verified: "github.com/dayflower/live-transcriber/"
   name "LiveTranscriber"
   desc "Real-time on-device speech transcription menu bar app for macOS"
