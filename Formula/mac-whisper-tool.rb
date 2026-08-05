@@ -5,21 +5,21 @@
 class MacWhisperTool < Formula
   desc "CLI tool to manage MacWhisper meeting transcriptions (search, list, export, MCP server)"
   homepage "https://github.com/dayflower/mac-whisper-tool"
-  version "0.6.3"
+  version "0.6.4"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/dayflower/mac-whisper-tool/releases/download/v0.6.3/mac-whisper-tool_0.6.3_darwin_x86_64.tar.gz"
-    sha256 "b122984c6d84e6130f67294764a6143e94db698fb102d2765ac07cec06f16746"
+    url "https://github.com/dayflower/mac-whisper-tool/releases/download/v0.6.4/mac-whisper-tool_0.6.4_darwin_x86_64.tar.gz"
+    sha256 "ac2ec6545f405bbb9a632c44026a8aac9d41629939210c26f9034cc1e1e80996"
 
     define_method(:install) do
       bin.install "mac-whisper-tool"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/dayflower/mac-whisper-tool/releases/download/v0.6.3/mac-whisper-tool_0.6.3_darwin_arm64.tar.gz"
-    sha256 "854c7bb714d2759fa6ad4e361e27a251b2a12d1dfb7890f6a9ff48e3c9968167"
+    url "https://github.com/dayflower/mac-whisper-tool/releases/download/v0.6.4/mac-whisper-tool_0.6.4_darwin_arm64.tar.gz"
+    sha256 "be81faf88828f257b68212d7221050f19d6f8128718a826c622d66429a5a69ee"
 
     define_method(:install) do
       bin.install "mac-whisper-tool"
