@@ -1,11 +1,11 @@
 class Echoview < Formula
   desc "ECHONET Lite command-line tool"
   homepage "https://github.com/dayflower/echoview"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
-  url "https://github.com/dayflower/echoview/releases/download/v0.1.1/echoview_0.1.1_darwin_arm64.tar.gz"
-  sha256 "f175d90c1adec1c97d2ef3366c0ad880d6c9484b93b5b65d5a33a5c509bd1ceb"
+  url "https://github.com/dayflower/echoview/releases/download/v0.1.2/echoview_0.1.2_darwin_arm64.tar.gz"
+  sha256 "8b4f5403226689018c91fa977a868528381a35999c9a11d25f46eab66bb4bd0a"
 
   depends_on :macos
   depends_on arch: :arm64
